@@ -21,13 +21,24 @@ namespace _Net_Assignment
     
         static void Main(string[] args)
         {
-          Book book =new Book();
-          book.Id =1;
-          book.Name ="The Psychology of Money";
-          book.Price =399;
-          book.AuthorName ="Morgan Housel";
+            Book[] books= new Book[2]
+            {
+                new Book{Id=1,Name="The Psychology of Money",AuthorName="Morgan Housel",Price=399},
+                new Book{Id=1,Name="Rich Dad Poor Dad",AuthorName="Morgan Housel",Price=399},
+            };
+            foreach (Book b in books)
+            {
+                System.Console.WriteLine(b);
+            }
 
-          Console.WriteLine(book);
+
+        //   Book book =new Book();
+        //   book.Id =1;
+        //   book.Name ="The Psychology of Money";
+        //   book.Price =399;
+        //   book.AuthorName ="Morgan Housel";
+
+        //   Console.WriteLine(book);
 
         //   Console.WriteLine($"book id: {book.Id} Book name: {book.Name} Author name: {book.AuthorName} price is: {book.Price}");
 
